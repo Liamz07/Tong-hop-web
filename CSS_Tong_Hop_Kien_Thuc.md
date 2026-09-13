@@ -47,7 +47,7 @@
 
 ---
 
-# 1. CSS là gì?
+## 1. CSS là gì?
 
 **CSS (Cascading Style Sheets)** là ngôn ngữ dùng để mô tả **cách HTML được hiển thị**.
 
@@ -89,7 +89,7 @@ CSS quyết định:
 
 ---
 
-# 2. Cấu trúc một rule CSS
+## 2. Cấu trúc một rule CSS
 
 Cấu trúc cơ bản:
 
@@ -129,9 +129,9 @@ Một selector có thể có nhiều property:
 
 ---
 
-# 3. Cách nhúng CSS
+## 3. Cách nhúng CSS
 
-## 3.1. Inline CSS
+### 3.1. Inline CSS
 
 Viết trực tiếp trong HTML:
 
@@ -143,7 +143,7 @@ Không nên sử dụng nhiều trong project lớn.
 
 ---
 
-## 3.2. Internal CSS
+### 3.2. Internal CSS
 
 Viết trong thẻ `<style>`:
 
@@ -159,7 +159,7 @@ Phù hợp với ví dụ nhỏ hoặc thử nghiệm.
 
 ---
 
-## 3.3. External CSS
+### 3.3. External CSS
 
 Tạo file:
 
@@ -185,9 +185,9 @@ body {
 
 ---
 
-# 4. Selector
+## 4. Selector
 
-## 4.1. Element selector
+### 4.1. Element selector
 
 Chọn theo tên thẻ:
 
@@ -201,7 +201,7 @@ p {
 
 ---
 
-## 4.2. Class selector
+### 4.2. Class selector
 
 ```css
 .card {
@@ -219,7 +219,7 @@ Class là selector được sử dụng rất nhiều khi xây dựng UI.
 
 ---
 
-## 4.3. ID selector
+### 4.3. ID selector
 
 ```css
 #header {
@@ -239,7 +239,7 @@ Trong CSS UI hiện đại, class thường được ưu tiên hơn ID.
 
 ---
 
-## 4.4. Universal selector
+### 4.4. Universal selector
 
 ```css
 * {
@@ -261,7 +261,7 @@ Một thiết lập thường gặp:
 
 ---
 
-## 4.5. Group selector
+### 4.5. Group selector
 
 ```css
 h1, h2, h3 {
@@ -271,7 +271,7 @@ h1, h2, h3 {
 
 ---
 
-## 4.6. Descendant selector
+### 4.6. Descendant selector
 
 ```css
 .card p {
@@ -283,7 +283,7 @@ Chọn `<p>` nằm bên trong `.card`.
 
 ---
 
-## 4.7. Child selector
+### 4.7. Child selector
 
 ```css
 .card > p {
@@ -295,7 +295,7 @@ Chỉ chọn `<p>` là **con trực tiếp** của `.card`.
 
 ---
 
-## 4.8. Attribute selector
+### 4.8. Attribute selector
 
 ```css
 input[type="text"] {
@@ -305,7 +305,7 @@ input[type="text"] {
 
 ---
 
-# 5. Cascade, specificity và inheritance
+## 5. Cascade, specificity và inheritance
 
 CSS có chữ **Cascading** vì khi nhiều rule cùng tác động lên một phần tử, trình duyệt phải quyết định rule nào được áp dụng.
 
@@ -349,7 +349,7 @@ Hãy cố gắng tổ chức selector rõ ràng thay vì giải quyết mọi v�
 
 ---
 
-## Inheritance
+### Inheritance
 
 Một số thuộc tính có thể được kế thừa từ phần tử cha.
 
@@ -366,9 +366,9 @@ Nhiều phần tử con sẽ kế thừa `font-family` và `color`.
 
 ---
 
-# 6. Đơn vị trong CSS
+## 6. Đơn vị trong CSS
 
-## 6.1. `px`
+### 6.1. `px`
 
 Đơn vị cố định tương đối với CSS pixel.
 
@@ -386,7 +386,7 @@ Dễ hiểu và thường dùng cho:
 
 ---
 
-## 6.2. `%`
+### 6.2. `%`
 
 Tỷ lệ dựa trên phần tử chứa.
 
@@ -404,7 +404,7 @@ Ví dụ:
 
 ---
 
-## 6.3. `rem`
+### 6.3. `rem`
 
 Dựa trên `font-size` của phần tử gốc (`html`).
 
@@ -423,7 +423,7 @@ Nếu mặc định browser là 16px:
 
 ---
 
-## 6.4. `em`
+### 6.4. `em`
 
 Dựa vào font-size của phần tử hiện tại/ngữ cảnh kế thừa.
 
@@ -435,7 +435,7 @@ padding: 1em;
 
 ---
 
-## 6.5. `vw` và `vh`
+### 6.5. `vw` và `vh`
 
 Dựa trên kích thước viewport.
 
@@ -454,7 +454,7 @@ Ví dụ:
 
 ---
 
-## 6.6. `vmin`, `vmax`
+### 6.6. `vmin`, `vmax`
 
 ```css
 width: 50vmin;
@@ -464,7 +464,7 @@ Dựa trên cạnh nhỏ/lớn hơn của viewport.
 
 ---
 
-# 7. Box Model
+## 7. Box Model
 
 Mọi phần tử HTML có thể được hình dung như một chiếc hộp:
 
@@ -494,9 +494,9 @@ Margin
 
 ---
 
-# 8. Width, height và kích thước
+## 8. Width, height và kích thước
 
-## `width`
+### `width`
 
 ```css
 .card {
@@ -504,7 +504,7 @@ Margin
 }
 ```
 
-## `height`
+### `height`
 
 ```css
 .card {
@@ -512,7 +512,7 @@ Margin
 }
 ```
 
-## `min-width`
+### `min-width`
 
 Kích thước tối thiểu:
 
@@ -522,7 +522,7 @@ Kích thước tối thiểu:
 }
 ```
 
-## `max-width`
+### `max-width`
 
 Rất hữu ích khi xây layout:
 
@@ -540,7 +540,7 @@ Rất hữu ích khi xây layout:
 - màn hình lớn → không kéo quá 1200px
 - `margin: 0 auto` → căn giữa
 
-## `min-height`
+### `min-height`
 
 ```css
 .card {
@@ -550,9 +550,9 @@ Rất hữu ích khi xây layout:
 
 ---
 
-# 9. Margin, padding, border
+## 9. Margin, padding, border
 
-## Margin
+### Margin
 
 Khoảng cách **bên ngoài** phần tử:
 
@@ -586,7 +586,7 @@ left/right = 20px
 
 ---
 
-## Padding
+### Padding
 
 Khoảng cách **từ content đến border**:
 
@@ -598,7 +598,7 @@ Khoảng cách **từ content đến border**:
 
 ---
 
-## Border
+### Border
 
 ```css
 .card {
@@ -616,7 +616,7 @@ border-color: #ddd;
 
 ---
 
-## `box-sizing`
+### `box-sizing`
 
 Nên thiết lập:
 
@@ -640,9 +640,9 @@ border: 1px solid;
 
 ---
 
-# 10. Màu sắc và background
+## 10. Màu sắc và background
 
-## `color`
+### `color`
 
 Màu chữ:
 
@@ -652,7 +652,7 @@ p {
 }
 ```
 
-## `background-color`
+### `background-color`
 
 ```css
 body {
@@ -660,7 +660,7 @@ body {
 }
 ```
 
-## `background-image`
+### `background-image`
 
 ```css
 .hero {
@@ -668,7 +668,7 @@ body {
 }
 ```
 
-## `background-size`
+### `background-size`
 
 ```css
 .hero {
@@ -678,7 +678,7 @@ body {
 
 `cover` thường dùng cho ảnh background cần phủ kín khu vực.
 
-## `background-position`
+### `background-position`
 
 ```css
 .hero {
@@ -686,7 +686,7 @@ body {
 }
 ```
 
-## `background-repeat`
+### `background-repeat`
 
 ```css
 background-repeat: no-repeat;
@@ -694,9 +694,9 @@ background-repeat: no-repeat;
 
 ---
 
-# 11. Font và text
+## 11. Font và text
 
-## `font-family`
+### `font-family`
 
 ```css
 body {
@@ -716,7 +716,7 @@ Nếu máy không có Inter → dùng Arial.
 
 ---
 
-## `font-size`
+### `font-size`
 
 ```css
 h1 {
@@ -726,7 +726,7 @@ h1 {
 
 ---
 
-## `font-weight`
+### `font-weight`
 
 ```css
 h1 {
@@ -745,7 +745,7 @@ Một số giá trị:
 
 ---
 
-## `line-height`
+### `line-height`
 
 Khoảng cách giữa các dòng:
 
@@ -759,7 +759,7 @@ p {
 
 ---
 
-## `text-align`
+### `text-align`
 
 ```css
 text-align: center;
@@ -776,7 +776,7 @@ justify
 
 ---
 
-## `text-decoration`
+### `text-decoration`
 
 ```css
 a {
@@ -786,7 +786,7 @@ a {
 
 ---
 
-## `text-transform`
+### `text-transform`
 
 ```css
 .title {
@@ -796,7 +796,7 @@ a {
 
 ---
 
-## `letter-spacing`
+### `letter-spacing`
 
 ```css
 .logo {
@@ -806,7 +806,7 @@ a {
 
 ---
 
-## `white-space`
+### `white-space`
 
 ```css
 white-space: nowrap;
@@ -816,7 +816,7 @@ Ngăn text xuống dòng.
 
 ---
 
-## `text-overflow`
+### `text-overflow`
 
 Thường kết hợp với:
 
@@ -834,9 +834,9 @@ Một đoạn văn bản rất dài...
 
 ---
 
-# 12. Display
+## 12. Display
 
-## `block`
+### `block`
 
 ```css
 display: block;
@@ -853,7 +853,7 @@ Ví dụ:
 
 ---
 
-## `inline`
+### `inline`
 
 ```css
 display: inline;
@@ -863,7 +863,7 @@ Nằm cùng dòng với nội dung khác.
 
 ---
 
-## `inline-block`
+### `inline-block`
 
 ```css
 display: inline-block;
@@ -873,7 +873,7 @@ Vẫn nằm cùng dòng nhưng có thể kiểm soát width/height.
 
 ---
 
-## `none`
+### `none`
 
 ```css
 display: none;
@@ -883,7 +883,7 @@ Phần tử không được hiển thị và không chiếm không gian layout.
 
 ---
 
-## `flex`
+### `flex`
 
 ```css
 display: flex;
@@ -893,7 +893,7 @@ Dùng để xây dựng layout một chiều.
 
 ---
 
-## `grid`
+### `grid`
 
 ```css
 display: grid;
@@ -903,9 +903,9 @@ Dùng để xây dựng layout hai chiều.
 
 ---
 
-# 13. Position
+## 13. Position
 
-## `static`
+### `static`
 
 Mặc định.
 
@@ -915,7 +915,7 @@ position: static;
 
 ---
 
-## `relative`
+### `relative`
 
 ```css
 .card {
@@ -927,7 +927,7 @@ Phần tử vẫn nằm trong flow bình thường nhưng có thể làm mốc c
 
 ---
 
-## `absolute`
+### `absolute`
 
 ```css
 .badge {
@@ -955,7 +955,7 @@ Ví dụ:
 
 ---
 
-## `fixed`
+### `fixed`
 
 ```css
 .button {
@@ -975,7 +975,7 @@ Thường dùng cho:
 
 ---
 
-## `sticky`
+### `sticky`
 
 ```css
 header {
@@ -988,7 +988,7 @@ Có thể "dính" khi scroll đến vị trí phù hợp.
 
 ---
 
-# 14. Flexbox
+## 14. Flexbox
 
 Flexbox là một trong những công cụ quan trọng nhất để xây layout.
 
@@ -1026,7 +1026,7 @@ Logo                  Menu    Login
 
 ---
 
-## `flex-direction`
+### `flex-direction`
 
 ```css
 flex-direction: row;
@@ -1042,7 +1042,7 @@ Xếp theo chiều dọc.
 
 ---
 
-## `justify-content`
+### `justify-content`
 
 Điều chỉnh theo **main axis**.
 
@@ -1063,7 +1063,7 @@ space-evenly
 
 ---
 
-## `align-items`
+### `align-items`
 
 Điều chỉnh theo **cross axis**:
 
@@ -1073,7 +1073,7 @@ align-items: center;
 
 ---
 
-## `gap`
+### `gap`
 
 Khoảng cách giữa các item:
 
@@ -1088,7 +1088,7 @@ Thường tốt hơn việc tự đặt margin cho từng item.
 
 ---
 
-## `flex-wrap`
+### `flex-wrap`
 
 Cho phép xuống dòng:
 
@@ -1101,7 +1101,7 @@ Cho phép xuống dòng:
 
 ---
 
-## `flex`
+### `flex`
 
 ```css
 .item {
@@ -1113,7 +1113,7 @@ Cho phép các item chia không gian.
 
 ---
 
-## Ứng dụng thực tế: Navbar
+### Ứng dụng thực tế: Navbar
 
 ```css
 .navbar {
@@ -1126,7 +1126,7 @@ Cho phép các item chia không gian.
 
 ---
 
-# 15. CSS Grid
+## 15. CSS Grid
 
 Grid phù hợp với layout dạng hàng + cột.
 
@@ -1150,7 +1150,7 @@ Kết quả:
 
 ---
 
-## `grid-template-columns`
+### `grid-template-columns`
 
 ```css
 grid-template-columns: 200px 1fr;
@@ -1167,7 +1167,7 @@ Ví dụ dashboard:
 
 ---
 
-## `repeat()`
+### `repeat()`
 
 ```css
 grid-template-columns: repeat(3, 1fr);
@@ -1181,7 +1181,7 @@ grid-template-columns: 1fr 1fr 1fr;
 
 ---
 
-## `minmax()`
+### `minmax()`
 
 ```css
 grid-template-columns: repeat(
@@ -1194,7 +1194,7 @@ grid-template-columns: repeat(
 
 ---
 
-## `grid-column`
+### `grid-column`
 
 Cho item chiếm nhiều cột:
 
@@ -1206,7 +1206,7 @@ Cho item chiếm nhiều cột:
 
 ---
 
-# 16. Overflow
+## 16. Overflow
 
 Kiểm soát nội dung vượt khỏi kích thước phần tử.
 
@@ -1238,9 +1238,9 @@ Task list sẽ scroll theo chiều dọc khi quá cao.
 
 ---
 
-# 17. Shadow và border-radius
+## 17. Shadow và border-radius
 
-## `border-radius`
+### `border-radius`
 
 ```css
 .card {
@@ -1252,7 +1252,7 @@ Bo góc.
 
 ---
 
-## `box-shadow`
+### `box-shadow`
 
 ```css
 .card {
@@ -1274,9 +1274,9 @@ Shadow nên dùng vừa phải. Quá nhiều shadow khiến UI nặng và rối.
 
 ---
 
-# 18. Pseudo-class và pseudo-element
+## 18. Pseudo-class và pseudo-element
 
-## `:hover`
+### `:hover`
 
 ```css
 .button:hover {
@@ -1288,7 +1288,7 @@ Khi đưa chuột lên button.
 
 ---
 
-## `:focus`
+### `:focus`
 
 ```css
 input:focus {
@@ -1300,7 +1300,7 @@ Khi input được focus.
 
 ---
 
-## `:active`
+### `:active`
 
 ```css
 .button:active {
@@ -1312,7 +1312,7 @@ Khi đang nhấn.
 
 ---
 
-## `:disabled`
+### `:disabled`
 
 ```css
 button:disabled {
@@ -1322,7 +1322,7 @@ button:disabled {
 
 ---
 
-## `:first-child`
+### `:first-child`
 
 ```css
 li:first-child {
@@ -1332,7 +1332,7 @@ li:first-child {
 
 ---
 
-## `::before`
+### `::before`
 
 ```css
 .title::before {
@@ -1342,7 +1342,7 @@ li:first-child {
 
 ---
 
-## `::after`
+### `::after`
 
 ```css
 .title::after {
@@ -1355,9 +1355,9 @@ li:first-child {
 
 ---
 
-# 19. Transition và transform
+## 19. Transition và transform
 
-## `transition`
+### `transition`
 
 Tạo chuyển đổi mượt:
 
@@ -1381,9 +1381,9 @@ transition: background-color 0.2s ease,
 
 ---
 
-## `transform`
+### `transform`
 
-### Scale
+#### scale
 
 ```css
 .card:hover {
@@ -1391,7 +1391,7 @@ transition: background-color 0.2s ease,
 }
 ```
 
-### Translate
+#### translate
 
 ```css
 .card:hover {
@@ -1399,7 +1399,7 @@ transition: background-color 0.2s ease,
 }
 ```
 
-### Rotate
+#### Rotate
 
 ```css
 .icon {
@@ -1409,7 +1409,7 @@ transition: background-color 0.2s ease,
 
 ---
 
-# 20. Animation
+## 20. Animation
 
 Ví dụ:
 
@@ -1441,7 +1441,7 @@ Không nên animation mọi thứ.
 
 ---
 
-# 21. Responsive Web Design
+## 21. Responsive Web Design
 
 Responsive nghĩa là giao diện thích ứng với kích thước màn hình.
 
@@ -1478,7 +1478,7 @@ và media query khi cần.
 
 ---
 
-# 22. Media Query
+## 22. Media Query
 
 Ví dụ:
 
@@ -1500,7 +1500,7 @@ Ví dụ:
 
 ---
 
-## Mobile-first
+### Mobile-first
 
 Một cách tiếp cận phổ biến:
 
@@ -1534,7 +1534,7 @@ Desktop
 
 ---
 
-# 23. CSS Variables
+## 23. CSS Variables
 
 Khai báo:
 
@@ -1568,7 +1568,7 @@ không cần sửa hàng chục selector.
 
 ---
 
-## Dark mode
+### Dark mode
 
 Ví dụ:
 
@@ -1595,9 +1595,9 @@ JavaScript có thể thêm/xóa class `.dark` trên `<body>`.
 
 ---
 
-# 24. Các hàm CSS thường dùng
+## 24. Các hàm CSS thường dùng
 
-## `calc()`
+### `calc()`
 
 Tính toán:
 
@@ -1615,7 +1615,7 @@ Ví dụ:
 
 ---
 
-## `min()`
+### `min()`
 
 ```css
 width: min(90%, 1200px);
@@ -1623,7 +1623,7 @@ width: min(90%, 1200px);
 
 ---
 
-## `max()`
+### `max()`
 
 ```css
 padding: max(16px, 3vw);
@@ -1631,7 +1631,7 @@ padding: max(16px, 3vw);
 
 ---
 
-## `clamp()`
+### `clamp()`
 
 Rất hữu ích cho responsive typography:
 
@@ -1651,7 +1651,7 @@ maximum = 4rem
 
 ---
 
-# 25. Z-index
+## 25. Z-index
 
 Điều chỉnh thứ tự chồng lớp:
 
@@ -1674,7 +1674,7 @@ z-index: 1    → Card
 
 ---
 
-# 26. Bố cục website được xác định như thế nào?
+## 26. Bố cục website được xác định như thế nào?
 
 Đây là phần rất quan trọng.
 
@@ -1727,7 +1727,7 @@ Flexbox
 
 ---
 
-## Nguyên tắc quan trọng
+### Nguyên tắc quan trọng
 
 Đừng nghĩ:
 
@@ -1762,7 +1762,7 @@ CSS sẽ tự tính vị trí dựa trên cấu trúc.
 
 ---
 
-# 27. Quy trình thiết kế UI bằng CSS
+## 27. Quy trình thiết kế UI bằng CSS
 
 Một workflow tốt:
 
@@ -1796,7 +1796,7 @@ Một workflow tốt:
 
 ---
 
-## 27.1. Wireframe
+### 27.1. Wireframe
 
 Trước tiên chỉ cần:
 
@@ -1813,7 +1813,7 @@ Chưa cần màu sắc đẹp.
 
 ---
 
-## 27.2. Xác định component
+### 27.2. Xác định component
 
 Ví dụ To-Do List:
 
@@ -1836,7 +1836,7 @@ App
 
 ---
 
-## 27.3. Design tokens
+### 27.3. Design tokens
 
 Xác định trước:
 
@@ -1865,7 +1865,7 @@ Sau đó tái sử dụng.
 
 ---
 
-# 28. Ví dụ project thực tế: To-Do List
+## 28. Ví dụ project thực tế: To-Do List
 
 Giả sử HTML:
 
@@ -1903,7 +1903,7 @@ Giả sử HTML:
 
 ---
 
-## Bước 1: Reset cơ bản
+### Bước 1: Reset cơ bản
 
 ```css
 * {
@@ -1918,7 +1918,7 @@ body {
 
 ---
 
-## Bước 2: Body
+### Bước 2: Body
 
 ```css
 body {
@@ -1930,7 +1930,7 @@ body {
 
 ---
 
-## Bước 3: Header
+### Bước 3: Header
 
 ```css
 .header {
@@ -1941,7 +1941,7 @@ body {
 
 ---
 
-## Bước 4: Main container
+### Bước 4: Main container
 
 ```css
 .main {
@@ -1954,7 +1954,7 @@ body {
 
 ---
 
-## Bước 5: Form
+### Bước 5: Form
 
 ```css
 .task-form {
@@ -1969,7 +1969,7 @@ body {
 
 ---
 
-## Bước 6: Task item
+### Bước 6: Task item
 
 ```css
 .task-item {
@@ -1987,7 +1987,7 @@ body {
 
 ---
 
-## Bước 7: Responsive
+### Bước 7: Responsive
 
 ```css
 @media (max-width: 600px) {
@@ -2023,7 +2023,7 @@ media query
 
 ---
 
-# 29. Ví dụ project thực tế: Dashboard quản lý chi tiêu
+## 29. Ví dụ project thực tế: Dashboard quản lý chi tiêu
 
 Một dashboard có thể chia:
 
@@ -2083,7 +2083,7 @@ Responsive:
 
 ---
 
-## Khi nào dùng Flexbox và Grid?
+### Khi nào dùng Flexbox và Grid?
 
 Quy tắc đơn giản:
 
@@ -2107,7 +2107,7 @@ Không phải quy tắc tuyệt đối, nhưng rất hữu ích khi mới học.
 
 ---
 
-# 30. Tổ chức file CSS
+## 30. Tổ chức file CSS
 
 Project nhỏ:
 
@@ -2154,7 +2154,7 @@ Không có một cấu trúc duy nhất bắt buộc. Quan trọng là project l
 
 ---
 
-# 31. CSS Framework là gì?
+## 31. CSS Framework là gì?
 
 CSS Framework là tập hợp các CSS/component được xây dựng sẵn để giúp phát triển giao diện nhanh hơn.
 
@@ -2226,7 +2226,7 @@ Bootstrap phù hợp khi muốn:
 
 ---
 
-# 33. Tailwind CSS
+## 33. Tailwind CSS
 
 Tailwind sử dụng utility classes.
 
@@ -2277,7 +2277,7 @@ Nhược điểm là HTML có thể chứa rất nhiều class.
 
 ---
 
-# 34. So sánh CSS thuần, Bootstrap và Tailwind
+## 34. So sánh CSS thuần, Bootstrap và Tailwind
 
 | Tiêu chí | CSS thuần | Bootstrap | Tailwind |
 |---|---|---|---|
@@ -2292,22 +2292,22 @@ Nhược điểm là HTML có thể chứa rất nhiều class.
 
 ---
 
-# 35. Khi nào nên dùng framework?
+## 35. Khi nào nên dùng framework?
 
-## Dùng CSS thuần khi:
+### Dùng CSS thuần khi:
 
 - đang học CSS
 - project nhỏ
 - muốn hiểu layout
 - cần thiết kế UI hoàn toàn riêng
 
-## Dùng Bootstrap khi:
+### Dùng Bootstrap khi:
 
 - cần làm nhanh
 - cần nhiều component có sẵn
 - muốn hệ thống grid và responsive thuận tiện
 
-## Dùng Tailwind khi:
+### Dùng Tailwind khi:
 
 - muốn xây UI tùy biến
 - project có design system rõ
@@ -2316,7 +2316,7 @@ Nhược điểm là HTML có thể chứa rất nhiều class.
 
 ---
 
-## Một workflow rất tốt
+### Một workflow rất tốt
 
 Không nhất thiết:
 
@@ -2344,9 +2344,9 @@ Nếu hiểu CSS, bạn sẽ học framework nhanh hơn.
 
 ---
 
-# 36. Lộ trình học CSS
+## 36. Lộ trình học CSS
 
-## Level 1 — Cơ bản
+### Level 1 — Cơ bản
 
 Học:
 
@@ -2365,7 +2365,7 @@ Width / Height
 
 ---
 
-## Level 2 — Layout
+### Level 2 — Layout
 
 Học thật chắc:
 
@@ -2388,7 +2388,7 @@ là hai phần cực kỳ quan trọng.
 
 ---
 
-## Level 3 — UI
+### Level 3 — UI
 
 Học:
 
@@ -2404,7 +2404,7 @@ animation
 
 ---
 
-## Level 4 — Responsive
+### Level 4 — Responsive
 
 Học:
 
@@ -2421,7 +2421,7 @@ clamp()
 
 ---
 
-## Level 5 — Maintainable CSS
+### Level 5 — Maintainable CSS
 
 Học:
 
@@ -2437,7 +2437,7 @@ Cascade
 
 ---
 
-## Level 6 — Framework
+### Level 6 — Framework
 
 Sau khi đã vững CSS:
 
@@ -2451,9 +2451,9 @@ Không cần học tất cả framework.
 
 ---
 
-# 37. Checklist CSS khi làm project
+## 37. Checklist CSS khi làm project
 
-## Trước khi code
+### Trước khi code
 
 - [ ] Xác định các trang
 - [ ] Xác định layout
@@ -2464,7 +2464,7 @@ Không cần học tất cả framework.
 - [ ] Xác định spacing
 - [ ] Xác định breakpoint
 
-## Khi code
+### Khi code
 
 - [ ] Có `box-sizing: border-box`
 - [ ] Dùng class rõ ràng
@@ -2475,7 +2475,7 @@ Không cần học tất cả framework.
 - [ ] Dùng `max-width` cho content
 - [ ] Tái sử dụng CSS Variables
 
-## Responsive
+### Responsive
 
 - [ ] Kiểm tra mobile
 - [ ] Kiểm tra tablet
@@ -2485,7 +2485,7 @@ Không cần học tất cả framework.
 - [ ] Kiểm tra form
 - [ ] Kiểm tra navigation
 
-## Accessibility
+### Accessibility
 
 - [ ] Có focus state
 - [ ] Màu chữ đủ tương phản
@@ -2495,7 +2495,7 @@ Không cần học tất cả framework.
 
 ---
 
-# 38. Những thuộc tính CSS nên nhớ trước tiên
+## 38. Những thuộc tính CSS nên nhớ trước tiên
 
 Nếu mới học, **không cần học thuộc hàng trăm thuộc tính**.
 
@@ -2557,7 +2557,7 @@ Quan trọng nhất vẫn là **biết thuộc tính dùng để giải quyết 
 
 ---
 
-# 39. Tư duy CSS quan trọng nhất
+## 39. Tư duy CSS quan trọng nhất
 
 Khi nhìn một giao diện, hãy đặt câu hỏi theo thứ tự:
 
@@ -2604,7 +2604,7 @@ Logo —— Menu —— Button
 
 ---
 
-# 40. Ví dụ tư duy hoàn chỉnh
+## 40. Ví dụ tư duy hoàn chỉnh
 
 Giả sử muốn tạo:
 
@@ -2672,7 +2672,7 @@ CSS:
 
 ---
 
-# 41. Kết luận
+## 41. Kết luận
 
 CSS không chỉ là:
 
