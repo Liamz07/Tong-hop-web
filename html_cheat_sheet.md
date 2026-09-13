@@ -32,7 +32,7 @@ Ví dụ:
 
 ---
 
-# 2. Cấu trúc cơ bản của file HTML
+## 2. Cấu trúc cơ bản của file HTML
 
 ```html
 <!DOCTYPE html>
@@ -55,7 +55,7 @@ Ví dụ:
 </html>
 ```
 
-## `<!DOCTYPE html>`
+### `<!DOCTYPE html>`
 
 Khai báo tài liệu sử dụng **HTML5**.
 
@@ -65,7 +65,7 @@ Khai báo tài liệu sử dụng **HTML5**.
 
 Đây không phải là một HTML tag.
 
-## `<html>`
+### `<html>`
 
 Phần tử gốc của toàn bộ tài liệu HTML.
 
@@ -77,7 +77,7 @@ Phần tử gốc của toàn bộ tài liệu HTML.
 
 ---
 
-# 3. `<head>` và các thẻ bên trong
+## 3. `<head>` và các thẻ bên trong
 
 `<head>` chứa các thông tin về trang, phần lớn không hiển thị trực tiếp trên giao diện.
 
@@ -96,7 +96,7 @@ Phần tử gốc của toàn bộ tài liệu HTML.
 </head>
 ```
 
-## `<title>` ⭐⭐⭐
+### `<title>` ⭐⭐⭐
 
 Tiêu đề xuất hiện trên tab trình duyệt.
 
@@ -104,11 +104,11 @@ Tiêu đề xuất hiện trên tab trình duyệt.
 <title>To-Do List App</title>
 ```
 
-## `<meta>` ⭐⭐⭐
+### `<meta>` ⭐⭐⭐
 
 Cung cấp metadata cho trình duyệt và công cụ tìm kiếm.
 
-### UTF-8
+#### UTF-8
 
 ```html
 <meta charset="UTF-8">
@@ -116,7 +116,7 @@ Cung cấp metadata cho trình duyệt và công cụ tìm kiếm.
 
 Giúp trang hiển thị tiếng Việt và các ký tự Unicode.
 
-### Responsive
+#### Responsive
 
 ```html
 <meta name="viewport"
@@ -125,7 +125,7 @@ Giúp trang hiển thị tiếng Việt và các ký tự Unicode.
 
 Rất quan trọng khi làm website responsive trên điện thoại.
 
-## `<link>` ⭐⭐⭐
+### `<link>` ⭐⭐⭐
 
 Liên kết tài nguyên bên ngoài.
 
@@ -141,7 +141,7 @@ Favicon:
 <link rel="icon" href="favicon.ico">
 ```
 
-## `<style>`
+### `<style>`
 
 Viết CSS trực tiếp trong HTML.
 
@@ -159,7 +159,7 @@ Trong project thực tế thường ưu tiên file CSS riêng:
 <link rel="stylesheet" href="style.css">
 ```
 
-## `<script>` ⭐⭐⭐
+### `<script>` ⭐⭐⭐
 
 Nhúng JavaScript.
 
@@ -177,7 +177,7 @@ Thông thường có thể dùng:
 
 ---
 
-# 4. Heading – tiêu đề ⭐⭐⭐
+## 4. Heading – tiêu đề ⭐⭐⭐
 
 HTML có 6 cấp độ heading:
 
@@ -215,9 +215,9 @@ h1
 
 ---
 
-# 5. Văn bản ⭐⭐⭐
+## 5. Văn bản ⭐⭐⭐
 
-## `<p>`
+### `<p>`
 
 Paragraph – đoạn văn.
 
@@ -225,7 +225,7 @@ Paragraph – đoạn văn.
 <p>Đây là một đoạn văn.</p>
 ```
 
-## `<br>`
+### `<br>`
 
 Xuống dòng.
 
@@ -238,7 +238,7 @@ Xuống dòng.
 
 `<br>` là void element, không cần thẻ đóng.
 
-## `<hr>`
+### `<hr>`
 
 Tạo đường phân cách.
 
@@ -250,7 +250,7 @@ Tạo đường phân cách.
 <p>Phần 2</p>
 ```
 
-## `<strong>` ⭐
+###`<strong>` ⭐
 
 Nhấn mạnh nội dung quan trọng, thường hiển thị in đậm.
 
@@ -260,7 +260,7 @@ Nhấn mạnh nội dung quan trọng, thường hiển thị in đậm.
 </p>
 ```
 
-## `<em>`
+### `<em>`
 
 Nhấn mạnh về mặt ngữ nghĩa, thường hiển thị in nghiêng.
 
@@ -270,7 +270,7 @@ Nhấn mạnh về mặt ngữ nghĩa, thường hiển thị in nghiêng.
 </p>
 ```
 
-## `<b>`
+### `<b>`
 
 In đậm về mặt trình bày.
 
@@ -280,7 +280,7 @@ In đậm về mặt trình bày.
 
 Nếu muốn thể hiện ý nghĩa "quan trọng", ưu tiên `<strong>`.
 
-## `<i>`
+### `<i>`
 
 In nghiêng về mặt trình bày.
 
@@ -288,7 +288,7 @@ In nghiêng về mặt trình bày.
 <i>Hello</i>
 ```
 
-## `<u>`
+### `<u>`
 
 Gạch chân.
 
@@ -298,7 +298,7 @@ Gạch chân.
 
 Không nên lạm dụng vì người dùng thường có thể hiểu text gạch chân là link.
 
-## `<mark>`
+### `<mark>`
 
 Highlight nội dung.
 
@@ -308,7 +308,7 @@ Highlight nội dung.
 </p>
 ```
 
-## `<small>`
+### `<small>`
 
 Chữ nhỏ hơn.
 
@@ -316,7 +316,7 @@ Chữ nhỏ hơn.
 <small>Copyright © 2026</small>
 ```
 
-## `<del>`
+### `<del>`
 
 Nội dung bị xóa.
 
@@ -332,7 +332,7 @@ Ví dụ:
 </p>
 ```
 
-## `<ins>`
+### `<ins>`
 
 Nội dung được thêm vào.
 
@@ -340,7 +340,7 @@ Nội dung được thêm vào.
 <ins>Nội dung mới</ins>
 ```
 
-## `<sub>`
+### `<sub>`
 
 Chỉ số dưới.
 
@@ -350,7 +350,7 @@ H<sub>2</sub>O
 
 Kết quả: H₂O
 
-## `<sup>`
+### `<sup>`
 
 Chỉ số trên.
 
@@ -362,9 +362,9 @@ Kết quả: x²
 
 ---
 
-# 6. `<div>` và `<span>` ⭐⭐⭐
+## 6. `<div>` và `<span>` ⭐⭐⭐
 
-## `<div>`
+### `<div>`
 
 Container dạng block.
 
@@ -377,7 +377,7 @@ Container dạng block.
 
 Thường dùng để gom nhóm các phần tử.
 
-## `<span>`
+### `<span>`
 
 Container dạng inline.
 
@@ -389,7 +389,7 @@ Container dạng inline.
 
 Thường dùng để style một phần nhỏ của text.
 
-### So sánh
+#### So sánh
 
 ```html
 <div>Hello</div>
@@ -409,7 +409,7 @@ Có thể nằm cùng dòng.
 
 ---
 
-# 7. Link – `<a>` ⭐⭐⭐
+## 7. Link – `<a>` ⭐⭐⭐
 
 Dùng để tạo hyperlink.
 
@@ -445,7 +445,7 @@ Link tới một phần trong cùng trang:
 
 ---
 
-# 8. Hình ảnh – `<img>` ⭐⭐⭐
+## 8. Hình ảnh – `<img>` ⭐⭐⭐
 
 ```html
 <img src="cat.jpg" alt="Một con mèo">
@@ -472,7 +472,7 @@ Ví dụ:
 
 ---
 
-# 9. `<picture>`
+## 9. `<picture>`
 
 Cho phép trình duyệt lựa chọn hình ảnh phù hợp theo điều kiện.
 
@@ -488,9 +488,9 @@ Cho phép trình duyệt lựa chọn hình ảnh phù hợp theo điều kiện
 
 ---
 
-# 10. Audio và Video ⭐⭐
+## 10. Audio và Video ⭐⭐
 
-## `<audio>`
+### `<audio>`
 
 ```html
 <audio controls>
@@ -519,7 +519,7 @@ Một số thuộc tính:
 
 ---
 
-# 11. `<iframe>` ⭐⭐
+## 11. `<iframe>` ⭐⭐
 
 Nhúng một trang hoặc tài nguyên khác.
 
@@ -537,9 +537,9 @@ Có thể dùng để nhúng YouTube, Google Maps và một số nội dung bên
 
 ---
 
-# 12. Danh sách ⭐⭐⭐
+## 12. Danh sách ⭐⭐⭐
 
-## `<ul>` – unordered list
+### `<ul>` – unordered list
 
 Danh sách không đánh số.
 
@@ -551,7 +551,7 @@ Danh sách không đánh số.
 </ul>
 ```
 
-## `<ol>` – ordered list
+### `<ol>` – ordered list
 
 Danh sách có thứ tự.
 
@@ -563,7 +563,7 @@ Danh sách có thứ tự.
 </ol>
 ```
 
-## `<li>`
+### `<li>`
 
 List item.
 
@@ -573,7 +573,7 @@ List item.
 
 Thường nằm trong `<ul>` hoặc `<ol>`.
 
-## `<dl>`, `<dt>`, `<dd>`
+### `<dl>`, `<dt>`, `<dd>`
 
 Description list.
 
@@ -589,7 +589,7 @@ Description list.
 
 ---
 
-# 13. Table – bảng ⭐⭐
+## 13. Table – bảng ⭐⭐
 
 Các thẻ quan trọng:
 
@@ -631,39 +631,39 @@ Ví dụ:
 </table>
 ```
 
-## `<table>`
+### `<table>`
 
 Tạo bảng.
 
-## `<tr>`
+### `<tr>`
 
 Table row – một hàng.
 
-## `<th>`
+### `<th>`
 
 Table header – ô tiêu đề.
 
-## `<td>`
+### `<td>`
 
 Table data – ô dữ liệu.
 
-## `<thead>`
+### `<thead>`
 
 Phần đầu bảng.
 
-## `<tbody>`
+### `<tbody>`
 
 Phần thân bảng.
 
-## `<tfoot>`
+### `<tfoot>`
 
 Phần cuối bảng.
 
 ---
 
-# 14. Gộp ô trong bảng
+## 14. Gộp ô trong bảng
 
-## `colspan`
+### `colspan`
 
 Gộp nhiều cột:
 
@@ -673,7 +673,7 @@ Gộp nhiều cột:
 </td>
 ```
 
-## `rowspan`
+### `rowspan`
 
 Gộp nhiều hàng:
 
@@ -685,7 +685,7 @@ Gộp nhiều hàng:
 
 ---
 
-# 15. Form ⭐⭐⭐
+## 15. Form ⭐⭐⭐
 
 Form là phần rất quan trọng khi làm web.
 
@@ -709,7 +709,7 @@ Ví dụ:
 
 ---
 
-# 16. `<form>`
+## 16. `<form>`
 
 Container chứa form.
 
@@ -734,7 +734,7 @@ Ví dụ:
 
 ---
 
-# 17. `<label>` ⭐⭐⭐
+## 17. `<label>` ⭐⭐⭐
 
 Tên hoặc mô tả cho input.
 
@@ -754,7 +754,7 @@ id="email"
 
 ---
 
-# 18. `<input>` ⭐⭐⭐
+## 18. `<input>` ⭐⭐⭐
 
 Một trong những thẻ quan trọng nhất trong form.
 
@@ -850,7 +850,7 @@ Các `type` phổ biến:
 
 ---
 
-# 19. Các thuộc tính `<input>` quan trọng ⭐⭐⭐
+## 19. Các thuộc tính `<input>` quan trọng ⭐⭐⭐
 
 Ví dụ:
 
@@ -864,7 +864,7 @@ Ví dụ:
 >
 ```
 
-## `id`
+### `id`
 
 Định danh của phần tử.
 
@@ -874,7 +874,7 @@ id="username"
 
 Mỗi `id` nên là duy nhất trong trang.
 
-## `class`
+### `class`
 
 Dùng để CSS hoặc JavaScript nhóm các phần tử.
 
@@ -882,7 +882,7 @@ Dùng để CSS hoặc JavaScript nhóm các phần tử.
 class="input-field"
 ```
 
-## `name`
+### `name`
 
 Tên dữ liệu khi form gửi đi.
 
@@ -890,7 +890,7 @@ Tên dữ liệu khi form gửi đi.
 name="username"
 ```
 
-## `placeholder`
+### `placeholder`
 
 Text gợi ý.
 
@@ -898,7 +898,7 @@ Text gợi ý.
 placeholder="Nhập tên..."
 ```
 
-## `required`
+### `required`
 
 Bắt buộc nhập.
 
@@ -906,7 +906,7 @@ Bắt buộc nhập.
 required
 ```
 
-## `disabled`
+### `disabled`
 
 Vô hiệu hóa.
 
@@ -914,7 +914,7 @@ Vô hiệu hóa.
 disabled
 ```
 
-## `readonly`
+### `readonly`
 
 Chỉ đọc, không cho sửa.
 
@@ -922,7 +922,7 @@ Chỉ đọc, không cho sửa.
 readonly
 ```
 
-## `min`, `max`
+### `min`, `max`
 
 Giới hạn giá trị số.
 
@@ -930,7 +930,7 @@ Giới hạn giá trị số.
 <input type="number" min="1" max="100">
 ```
 
-## `minlength`, `maxlength`
+### `minlength`, `maxlength`
 
 Giới hạn độ dài.
 
@@ -944,7 +944,7 @@ Giới hạn độ dài.
 
 ---
 
-# 20. `<textarea>` ⭐⭐
+## 20. `<textarea>` ⭐⭐
 
 Nhập văn bản nhiều dòng.
 
@@ -970,7 +970,7 @@ Ví dụ:
 
 ---
 
-# 21. `<select>` ⭐⭐
+## 21. `<select>` ⭐⭐
 
 Tạo dropdown.
 
@@ -994,7 +994,7 @@ Ví dụ filter trong To-Do List:
 
 ---
 
-# 22. `<option>`
+## 22. `<option>`
 
 Một lựa chọn trong `<select>`.
 
@@ -1006,7 +1006,7 @@ Một lựa chọn trong `<select>`.
 
 ---
 
-# 23. `<optgroup>`
+## 23. `<optgroup>`
 
 Nhóm các option.
 
@@ -1027,7 +1027,7 @@ Nhóm các option.
 
 ---
 
-# 24. `<button>` ⭐⭐⭐
+## 24. `<button>` ⭐⭐⭐
 
 Tạo nút bấm.
 
@@ -1059,7 +1059,7 @@ Các loại phổ biến:
 
 ---
 
-# 25. `<fieldset>` và `<legend>`
+## 25. `<fieldset>` và `<legend>`
 
 Dùng để nhóm các trường form.
 
@@ -1077,7 +1077,7 @@ Dùng để nhóm các trường form.
 
 ---
 
-# 26. Semantic HTML ⭐⭐⭐
+## 26. Semantic HTML ⭐⭐⭐
 
 Semantic HTML giúp cấu trúc trang có **ý nghĩa rõ ràng**.
 
@@ -1104,7 +1104,7 @@ HTML5 cung cấp:
 
 ---
 
-# 27. `<header>` ⭐⭐⭐
+## 27. `<header>` ⭐⭐⭐
 
 Phần đầu của trang hoặc một section.
 
@@ -1126,7 +1126,7 @@ Ví dụ phù hợp với To-Do List:
 
 ---
 
-# 28. `<nav>` ⭐⭐⭐
+## 28. `<nav>` ⭐⭐⭐
 
 Khu vực chứa navigation.
 
@@ -1140,7 +1140,7 @@ Khu vực chứa navigation.
 
 ---
 
-# 29. `<main>` ⭐⭐⭐
+## 29. `<main>` ⭐⭐⭐
 
 Nội dung chính của trang.
 
@@ -1155,7 +1155,7 @@ Một trang thường chỉ có một `<main>` chính.
 
 ---
 
-# 30. `<section>` ⭐⭐⭐
+## 30. `<section>` ⭐⭐⭐
 
 Chia nội dung thành các khu vực có chủ đề.
 
@@ -1184,7 +1184,7 @@ Ví dụ To-Do List:
 
 ---
 
-# 31. `<article>`
+## 31. `<article>`
 
 Một nội dung độc lập.
 
@@ -1201,7 +1201,7 @@ Một article có thể được lấy ra khỏi trang mà vẫn có ý nghĩa r
 
 ---
 
-# 32. `<aside>`
+## 32. `<aside>`
 
 Nội dung phụ.
 
@@ -1222,7 +1222,7 @@ Nội dung phụ.
 
 ---
 
-# 33. `<footer>` ⭐⭐
+## 33. `<footer>` ⭐⭐
 
 Phần cuối trang hoặc một section.
 
@@ -1234,7 +1234,7 @@ Phần cuối trang hoặc một section.
 
 ---
 
-# 34. `<figure>` và `<figcaption>`
+## 34. `<figure>` và `<figcaption>`
 
 Dùng cho hình ảnh có chú thích.
 
@@ -1250,7 +1250,7 @@ Dùng cho hình ảnh có chú thích.
 
 ---
 
-# 35. `<details>` và `<summary>`
+## 35. `<details>` và `<summary>`
 
 Tạo nội dung có thể mở/đóng.
 
@@ -1268,7 +1268,7 @@ Rất phù hợp cho FAQ.
 
 ---
 
-# 36. `<dialog>`
+## 36. `<dialog>`
 
 Tạo dialog/modal.
 
@@ -1283,7 +1283,7 @@ JavaScript có thể điều khiển dialog.
 
 ---
 
-# 37. `<progress>`
+## 37. `<progress>`
 
 Thanh tiến trình.
 
@@ -1299,7 +1299,7 @@ Ví dụ:
 
 ---
 
-# 38. `<meter>`
+## 38. `<meter>`
 
 Biểu thị một giá trị trong một phạm vi.
 
@@ -1320,7 +1320,7 @@ Có thể dùng cho:
 
 ---
 
-# 39. `<time>`
+## 39. `<time>`
 
 Biểu diễn thời gian/ngày tháng.
 
@@ -1332,7 +1332,7 @@ Biểu diễn thời gian/ngày tháng.
 
 ---
 
-# 40. `<code>`
+## 40. `<code>`
 
 Hiển thị đoạn code.
 
@@ -1344,7 +1344,7 @@ Hiển thị đoạn code.
 
 ---
 
-# 41. `<pre>`
+## 41. `<pre>`
 
 Giữ nguyên khoảng trắng và xuống dòng.
 
@@ -1369,7 +1369,7 @@ console.log(x);
 
 ---
 
-# 42. `<blockquote>`
+## 42. `<blockquote>`
 
 Trích dẫn một đoạn nội dung dài.
 
@@ -1381,7 +1381,7 @@ Trích dẫn một đoạn nội dung dài.
 
 ---
 
-# 43. `<q>`
+## 43. `<q>`
 
 Trích dẫn ngắn.
 
@@ -1393,7 +1393,7 @@ Trích dẫn ngắn.
 
 ---
 
-# 44. `<abbr>`
+## 44. `<abbr>`
 
 Viết tắt.
 
@@ -1407,7 +1407,7 @@ Khi hover có thể xem phần giải thích.
 
 ---
 
-# 45. `<address>`
+## 45. `<address>`
 
 Thông tin liên hệ.
 
@@ -1420,7 +1420,7 @@ Thông tin liên hệ.
 
 ---
 
-# 46. Comment trong HTML ⭐⭐
+## 46. Comment trong HTML ⭐⭐
 
 Comment:
 
@@ -1441,9 +1441,9 @@ Ví dụ:
 
 ---
 
-# 47. Global Attributes – thuộc tính dùng ở nhiều thẻ ⭐⭐⭐
+## 47. Global Attributes – thuộc tính dùng ở nhiều thẻ ⭐⭐⭐
 
-## `id`
+### `id`
 
 ```html
 <div id="app"></div>
@@ -1453,7 +1453,7 @@ Dùng để định danh một phần tử.
 
 Thông thường một `id` nên là duy nhất trong trang.
 
-## `class`
+### `class`
 
 ```html
 <div class="card"></div>
@@ -1467,7 +1467,7 @@ Nhiều phần tử có thể dùng cùng class:
 <div class="card"></div>
 ```
 
-## `style`
+### `style`
 
 Viết CSS trực tiếp:
 
@@ -1479,7 +1479,7 @@ Viết CSS trực tiếp:
 
 Không nên lạm dụng trong project lớn.
 
-## `title`
+### `title`
 
 Tooltip khi hover:
 
@@ -1489,7 +1489,7 @@ Tooltip khi hover:
 </button>
 ```
 
-## `hidden`
+### `hidden`
 
 Ẩn phần tử:
 
@@ -1499,7 +1499,7 @@ Tooltip khi hover:
 </div>
 ```
 
-## `data-*`
+### `data-*`
 
 Lưu dữ liệu tùy chỉnh:
 
@@ -1515,7 +1515,7 @@ JavaScript có thể đọc các thuộc tính `data-*`.
 
 ---
 
-# 48. `aria-*` – Accessibility ⭐⭐
+## 48. `aria-*` – Accessibility ⭐⭐
 
 Ví dụ:
 
@@ -1543,7 +1543,7 @@ Ví dụ notification trong To-Do List:
 
 ---
 
-# 49. Thuộc tính `role`
+## 49. Thuộc tính `role`
 
 Xác định vai trò của phần tử.
 
@@ -1557,7 +1557,7 @@ Nếu đã có semantic tag phù hợp thì thường nên dùng semantic tag tr
 
 ---
 
-# 50. Một số thẻ HTML khác
+## 50. Một số thẻ HTML khác
 
 | Thẻ | Chức năng |
 |---|---|
@@ -1577,7 +1577,7 @@ Những thẻ này không cần ưu tiên học ngay.
 
 ---
 
-# 51. Các thẻ HTML cũ/không nên dùng
+## 51. Các thẻ HTML cũ/không nên dùng
 
 Có thể gặp trên Internet nhưng không nên dùng cho project mới:
 
@@ -1611,7 +1611,7 @@ Ngày nay nên dùng CSS:
 
 ---
 
-# 52. Block vs Inline
+## 52. Block vs Inline
 
 Đây là khái niệm rất quan trọng khi học HTML + CSS.
 
@@ -1633,7 +1633,7 @@ Ngày nay nên dùng CSS:
 
 Thường chiếm một dòng riêng.
 
-## Một số inline elements
+### Một số inline elements
 
 ```text
 <span>
@@ -1772,11 +1772,11 @@ Ví dụ:
 
 ---
 
-# 54. Thứ tự học HTML đề xuất
+## 54. Thứ tự học HTML đề xuất
 
 Không nên cố học hết tất cả các thẻ ngay.
 
-## 🟢 Level 1 – Bắt buộc
+### 🟢 Level 1 – Bắt buộc
 
 Học thật chắc:
 
@@ -1797,7 +1797,7 @@ ol
 li
 ```
 
-## 🟡 Level 2 – Form
+### 🟡 Level 2 – Form
 
 ```text
 form
@@ -1821,7 +1821,7 @@ disabled
 readonly
 ```
 
-## 🟠 Level 3 – Semantic HTML
+### 🟠 Level 3 – Semantic HTML
 
 ```text
 header
@@ -1837,7 +1837,7 @@ figcaption
 
 Đây là phần nên học kỹ nếu muốn làm web chuyên nghiệp.
 
-## 🔵 Level 4 – Multimedia / nâng cao
+### 🔵 Level 4 – Multimedia / nâng cao
 
 ```text
 audio
@@ -1854,7 +1854,7 @@ progress
 meter
 ```
 
-## 🟣 Level 5 – Accessibility + HTML nâng cao
+### 🟣 Level 5 – Accessibility + HTML nâng cao
 
 ```text
 aria-*
@@ -1868,7 +1868,7 @@ abbr
 
 ---
 
-# 55. Quan trọng hơn việc nhớ tên thẻ
+## 55. Quan trọng hơn việc nhớ tên thẻ
 
 Không cần học HTML theo kiểu:
 
