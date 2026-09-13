@@ -250,7 +250,7 @@ Tạo đường phân cách.
 <p>Phần 2</p>
 ```
 
-###`<strong>` ⭐
+### `<strong>` ⭐
 
 Nhấn mạnh nội dung quan trọng, thường hiển thị in đậm.
 
