@@ -1,4 +1,4 @@
-# HTML Cheat Sheet – Tổng hợp kiến thức HTML
+# Tổng hợp kiến thức HTML
 
 > Tài liệu tổng hợp các thẻ HTML quan trọng, chức năng và ví dụ thông dụng.
 > Phù hợp để học HTML từ cơ bản đến nâng cao và làm các project web.
