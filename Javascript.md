@@ -1,4 +1,4 @@
-# JavaScript Chuyên Sâu & Thực Tiễn — Full Guide
+# JavaScript Chuyên sâu & Thực tiễn — Full Guide
 
 > Tài liệu tổng hợp JavaScript theo hướng **học để làm project web thực tế**.  
 > Trọng tâm: JavaScript hiện đại (ES6+), DOM, Event, Array, Async, API, Storage, Modules, Error Handling, Performance, Security và kiến trúc project.
